@@ -1,3 +1,61 @@
+*
+  box-sizing: border-box
+
 body
-  padding: 50px
   font-family: system-ui
+  margin: 0
+
+h1,
+h2
+  margin: 0
+
+.tiles
+  display: flex
+  flex-wrap: wrap
+  height: 100vh
+  overflow: hidden
+  padding: 10px
+
+  & section
+    width: calc(50% - 20px)
+    height: calc(50% - 20px)
+    overflow: hidden
+    margin: 10px
+    border-radius: 3px
+    box-shadow: 3px 3px 10px 2px rgba(84, 84, 84, 0.7)
+
+    &.description
+      background-color: #90c790
+      padding: 20px
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      justify-content: center
+      text-align: center
+
+      & h1,
+      & h2
+        width: 100%
+
+    &.contact
+      background-color: #4a57a0
+      display: flex
+      align-items: center
+      justify-content: center
+
+      & a
+        color: white
+
+    &.portrait
+      display: flex
+      align-items: center
+      justify-content: center
+
+    &.family
+      display: flex
+      align-items: center
+      background-color: #252a4a
+
+  & img
+    width: 100%
+    height: auto
